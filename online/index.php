@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
             ?>
         <script>
             alert("Mohon maaf, permintaan permohonan surat anda ditolak karena NIK yang anda masukkan tidak terdaftar pada sistem. Silahkan menghubungi Admin Kelurahan Benteng Utara");
-            document.location='http://imtoor.tech/benteng_utara/online/';
+            document.location='http://imtoor.tech/sisfo_benteng_utara/online/';
         </script>
 <?php }
 
@@ -38,13 +38,13 @@ if (isset($_POST['submit'])) {
       if($exec) { ?>
         <script>
             alert("Sukses mengirim permohonan");
-            document.location = 'http://imtoor.tech/benteng_utara/online/';
+            document.location = 'http://imtoor.tech/sisfo_benteng_utara/online/';
         </script>
 <?php } else { 
         ?>
         <script>
             alert("Gagal mengirim permohonan, silahkan hubungi admin kelurahan");
-            document.location = 'http://imtoor.tech/benteng_utara/online/';
+            document.location = 'http://imtoor.tech/sisfo_benteng_utara/online/';
         </script>        
 <?php }
 }
