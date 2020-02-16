@@ -32,6 +32,7 @@ class First extends Web_Controller {
 		mandiri_timeout();
 		$this->load->model('header_model');
 		$this->load->model('config_model');
+		$this->load->model('bantuan_sosial_model');
 		$this->load->model('first_m');
 		$this->load->model('first_artikel_m');
 		$this->load->model('first_gallery_m');
@@ -45,6 +46,18 @@ class First extends Web_Controller {
 		$this->load->model('laporan_penduduk_model');
 		$this->load->model('track_model');
 		$this->load->model('keluar_model');
+	}
+
+	public function bantuan_sosial($p = 1) {
+		$data = $this->includes;
+		$data['p'] = $p;
+		$data['paging']  = $this->first_artikel_m->paging_arsip($p);
+		$data['bantuan_sosial'] = $this->bantuan_sosial_model->full_bantuan($data['paging']->offset,$data['paging']->per_page);
+
+		$this->_get_common_data($data);
+
+		$this->set_template('layouts/bantuan_sosial.php');
+		$this->load->view($this->template,$data);
 	}
 
 	public function auth()

@@ -1,8 +1,8 @@
 <?php 
 $host = "localhost";
 $user = "root";
-$pass = "c!NT2~q[cF";
-$db = "benteng_utara";
+$pass = "12345";
+$db = "opensid_bontokanang";
 
 $connect = mysqli_connect($host,$user,$pass,$db);
 if(!$connect) {
