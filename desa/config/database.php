@@ -10,7 +10,7 @@
 // Data Konfigurasi MySQL yang disesuaikan
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'c!NT2~q[cF';
-$db['default']['database'] = 'benteng_utara';
+$db['default']['username'] = 'u6194779_bentengutara';
+$db['default']['password'] = 'ch183*$#y74';
+$db['default']['database'] = 'u6194779_bentengutara';
 ?>
