@@ -17,7 +17,7 @@
 						<?= ucfirst($this->setting->sebutan_kabupaten_singkat) ?>
 						<?= ucwords($desa['nama_kabupaten']) ?>,
 						<?= ucwords($data_config['nama_propinsi']) ?>,
-						Indonesia
+						Indonesias
 					</span>
 				</div>
 			</div>
