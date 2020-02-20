@@ -5,15 +5,14 @@
 </style>
 <div class="content-wrapper">
 	<section class='content-header'>
-		<h1>Tentang OpenSID</h1>
+		<h1>Selamat Datang</h1>
 		<ol class='breadcrumb'>
 			<li><a href='<?=site_url()?>'><i class='fa fa-home'></i> Home</a></li>
-			<li class='active'>Tentang OpenSID</li>
 		</ol>
 	</section>
 	<section class='content' id="maincontent">
 		<div class='row'>
-			<div class='col-md-6'>
+			<div class='col-md-12'>
 				<div class='box box-info'>
 				 	<div class='box-body'>
 						<div class="col-lg-6 col-xs-6">
@@ -106,11 +105,7 @@
 					</div>
 				</div>
 			</div>
-			<div class='col-md-6'>
-				<div class='box box-info'>
-					<?php $this->load->view('home/about.php');?>
-				</div>
-			</div>
+
 		</div>
 	</section>
 </div>
