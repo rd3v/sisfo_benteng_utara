@@ -1,8 +1,8 @@
 <?php 
 $host = "localhost";
-$user = "u6194779_bentengutara";
-$pass = "ch183*$#y74";
-$db = "u6194779_bentengutara";
+$user = "root";
+$pass = "12345";
+$db = "opensid_bontokanang";
 
 $connect = mysqli_connect($host,$user,$pass,$db);
 if(!$connect) {
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
             ?>
         <script>
             alert("Mohon maaf, permintaan permohonan surat anda ditolak karena NIK yang anda masukkan tidak terdaftar pada sistem. Silahkan menghubungi Admin Kelurahan Benteng Utara");
-            document.location='http://imtoor.tech/sisfo_benteng_utara/online/';
+            document.location='https://bentengutara.id/online/';
         </script>
 <?php }
 
@@ -38,13 +38,13 @@ if (isset($_POST['submit'])) {
       if($exec) { ?>
         <script>
             alert("Sukses mengirim permohonan");
-            document.location = 'http://imtoor.tech/sisfo_benteng_utara/online/';
+            document.location = 'https://bentengutara.id/online/';
         </script>
 <?php } else { 
         ?>
         <script>
             alert("Gagal mengirim permohonan, silahkan hubungi admin kelurahan");
-            document.location = 'http://imtoor.tech/sisfo_benteng_utara/online/';
+            document.location = 'https://bentengutara.id/online/';
         </script>        
 <?php }
 }
