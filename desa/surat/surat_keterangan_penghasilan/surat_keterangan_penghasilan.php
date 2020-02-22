@@ -55,36 +55,75 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="keperluan"  class="col-sm-3 control-label">Keperluan</label>
+								<label for="keperluan"  class="col-sm-3 control-label">Lingkungan</label>
 								<div class="col-sm-8">
-									<textarea name="keperluan" class="form-control input-sm required" placeholder="Keperluan"></textarea>
+									<input  id="lingkungan" class="form-control input-sm required" type="text" placeholder="Lingkungan" name="lingkungan">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="keterangan"  class="col-sm-3 control-label">Keterangan</label>
+								<label for="keperluan"  class="col-sm-3 control-label">Nama Orang Tua</label>
 								<div class="col-sm-8">
-									<textarea  id="keterangan" class="form-control input-sm required" placeholder="Keterangan" name="keterangan"></textarea>
+									<input  id="nama_ortu" class="form-control input-sm required" type="text" placeholder="Nama Orang Tua" name="nama_ortu">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="berlaku_dari"  class="col-sm-3 control-label">Berlaku Dari - Sampai</label>
+								<label for="keperluan"  class="col-sm-3 control-label">Tempat Lahir Orang Tua</label>
+								<div class="col-sm-8">
+									<input  id="tempat_lahir_ortu" class="form-control input-sm required" type="text" placeholder="Tempat Lahir Orang Tua" name="tempat_lahir_ortu">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="berlaku_dari"  class="col-sm-3 control-label">Tanggal Lahir Orang Tua</label>
 								<div class="col-sm-3 col-lg-2">
 									<div class="input-group input-group-sm date">
 										<div class="input-group-addon">
 											<i class="fa fa-calendar"></i>
 										</div>
-										<input title="Pilih Tanggal" id="tgl_mulai" class="form-control input-sm required" name="berlaku_dari" type="text"/>
-									</div>
-								</div>
-								<div class="col-sm-3 col-lg-2">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input title="Pilih Tanggal" id="tgl_akhir" class="form-control input-sm required" name="berlaku_sampai" type="text"/>
+										<input title="Pilih Tanggal" id="tgl_mulai" class="form-control input-sm required" name="tanggal_lahir_ortu" type="text"/>
 									</div>
 								</div>
 							</div>
+
+							<div class="form-group">
+								<label for="keperluan"  class="col-sm-3 control-label">Jenis Kelamin Orang Tua</label>
+								<div class="col-sm-8">
+									<select style="font-size:0.9em" name="jk_ortu" id="jk_ortu" class="form-control">
+										<option value="Pria">Pria</option>
+										<option value="Wanita">Wanita</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="keperluan"  class="col-sm-3 control-label">Pekerjaan Orang Tua</label>
+								<div class="col-sm-8">
+									<input  id="pekerjaan_ortu" class="form-control input-sm required" type="text" placeholder="Pekerjaan Orang Tua" name="pekerjaan_ortu">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="keperluan"  class="col-sm-3 control-label">Alamat Orang Tua</label>
+								<div class="col-sm-8">
+									<input  id="alamat_lahir_ortu" class="form-control input-sm required" type="text" placeholder="Alamat Orang Tua" name="alamat_ortu">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="nominal_penghasilan"  class="col-sm-3 control-label">Nominal Penghasilan</label>
+								<div class="col-sm-8">
+									<input id="nominal_penghasilan" class="form-control input-sm required" type="number" placeholder="Nominal Penghasilan" name="nominal_penghasilan">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="terbilang_penghasilan"  class="col-sm-3 control-label">Terbilang Penghasilan</label>
+								<div class="col-sm-8">
+									<input id="terbilang_penghasilan" class="form-control input-sm required" type="text" placeholder="Terbilang Penghasilan" name="terbilang_penghasilan">
+								</div>
+							</div>
+
+
 							<?php include("donjo-app/views/surat/form/_pamong.php"); ?>
 						</form>
 					</div>

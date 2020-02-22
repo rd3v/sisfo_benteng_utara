@@ -40,9 +40,33 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="usaha"  class="col-sm-3 control-label">Nama / Jenis Usaha</label>
+								<label for="nama_perusahaan"  class="col-sm-3 control-label">Nama Perusahaan</label>
 								<div class="col-sm-8">
-									<input  id="usaha" class="form-control input-sm required" type="text" placeholder="Nama / Jenis Usaha" name="usaha">
+									<input  id="nama_perusahaan" class="form-control input-sm required" type="text" placeholder="Nama Perusahaan" name="nama_perusahaan">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="alamat_perusahaan"  class="col-sm-3 control-label">Alamat Perusahaan</label>
+								<div class="col-sm-8">
+									<input  id="alamat_perusahaan" class="form-control input-sm required" type="text" placeholder="Alamat Perusahaan" name="alamat_perusahaan">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="nama_pimpinan"  class="col-sm-3 control-label">Nama Pimpinan</label>
+								<div class="col-sm-8">
+									<input  id="nama_pimpinan" class="form-control input-sm required" type="text" placeholder="Nama Pimpinan" name="nama_pimpinan">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="lingkungan"  class="col-sm-3 control-label">Lingkungan</label>
+								<div class="col-sm-8">
+									<input  id="lingkungan" class="form-control input-sm required" type="text" placeholder="Lingkungan" name="lingkungan">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="tahun_berdiri"  class="col-sm-3 control-label">Tahun Berdiri</label>
+								<div class="col-sm-8">
+									<input id="tahun_berdiri" class="form-control input-sm required" type="number" placeholder="Tahun Berdiri" name="tahun_berdiri">
 								</div>
 							</div>
 							<?php include("donjo-app/views/surat/form/_pamong.php"); ?>

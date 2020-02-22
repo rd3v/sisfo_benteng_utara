@@ -55,36 +55,47 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="keperluan"  class="col-sm-3 control-label">Keperluan</label>
+								<label for="keperluan"  class="col-sm-3 control-label">Nama Suami</label>
 								<div class="col-sm-8">
-									<textarea name="keperluan" class="form-control input-sm required" placeholder="Keperluan"></textarea>
+									<input  id="nama_suami" class="form-control input-sm required" type="text" placeholder="Nama Suami" name="nama_suami">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="keterangan"  class="col-sm-3 control-label">Keterangan</label>
+								<label for="keperluan"  class="col-sm-3 control-label">Tempat Lahir Suami</label>
 								<div class="col-sm-8">
-									<textarea  id="keterangan" class="form-control input-sm required" placeholder="Keterangan" name="keterangan"></textarea>
+									<input  id="tempat_lahir_suami" class="form-control input-sm required" type="text" placeholder="Tempat Lahir Suami" name="tempat_lahir_suami">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="berlaku_dari"  class="col-sm-3 control-label">Berlaku Dari - Sampai</label>
+								<label for="berlaku_dari"  class="col-sm-3 control-label">Tanggal Lahir Suami</label>
 								<div class="col-sm-3 col-lg-2">
 									<div class="input-group input-group-sm date">
 										<div class="input-group-addon">
 											<i class="fa fa-calendar"></i>
 										</div>
-										<input title="Pilih Tanggal" id="tgl_mulai" class="form-control input-sm required" name="berlaku_dari" type="text"/>
+										<input title="Pilih Tanggal" id="tgl_mulai" class="form-control input-sm required" name="tanggal_lahir_suami" type="text"/>
 									</div>
 								</div>
+							</div>
+							<div class="form-group">
+								<label for="keperluan" class="col-sm-3 control-label">Pekerjaan Suami</label>
+								<div class="col-sm-8">
+									<input  id="pekerjaan_suami" class="form-control input-sm required" type="text" placeholder="Pekerjaan Suami" name="pekerjaan_suami">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="berlaku_dari"  class="col-sm-3 control-label">Tanggal Meninggal Suami</label>
 								<div class="col-sm-3 col-lg-2">
 									<div class="input-group input-group-sm date">
 										<div class="input-group-addon">
 											<i class="fa fa-calendar"></i>
 										</div>
-										<input title="Pilih Tanggal" id="tgl_akhir" class="form-control input-sm required" name="berlaku_sampai" type="text"/>
+										<input title="Pilih Tanggal" id="tgl_akhir" class="form-control input-sm required" name="tanggal_meninggal_suami" type="text"/>
 									</div>
 								</div>
 							</div>
+
 							<?php include("donjo-app/views/surat/form/_pamong.php"); ?>
 						</form>
 					</div>

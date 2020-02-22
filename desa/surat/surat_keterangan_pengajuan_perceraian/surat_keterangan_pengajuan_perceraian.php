@@ -55,36 +55,36 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="keperluan"  class="col-sm-3 control-label">Keperluan</label>
-								<div class="col-sm-8">
-									<textarea name="keperluan" class="form-control input-sm required" placeholder="Keperluan"></textarea>
+								<label for="lingkungan" class="col-sm-3 control-label">Lingkungan</label>
+								<div class="col-sm-3">
+									<input id="lingkungan" class="form-control input-sm" type="text" placeholder="Lingkungan" name="lingkungan">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="nama_digugat" class="col-sm-3 control-label">Nama di gugat</label>
+								<div class="col-sm-3">
+									<input  id="nama_digugat" class="form-control input-sm required" type="text" placeholder="Nama di gugat" name="nama_digugat">
+								</div>
+								<label for="nama_digugat_bin" class="col-sm-1 control-label">Bin</label>
+								<div class="col-sm-3">
+									<input  id="nama_digugat_bin" class="form-control input-sm" type="text" placeholder="Bin" name="nama_digugat_bin">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="keterangan"  class="col-sm-3 control-label">Keterangan</label>
-								<div class="col-sm-8">
-									<textarea  id="keterangan" class="form-control input-sm required" placeholder="Keterangan" name="keterangan"></textarea>
+								<label for="waktu_pisah_rumah" class="col-sm-3 control-label">Waktu pisah rumah</label>
+								<div class="col-sm-3">
+									<input id="waktu_pisah_rumah" class="form-control input-sm" type="text" placeholder="Waktu pisah rumah" name="waktu_pisah_rumah">
+								<span style="font-size: 0.9em;font-style: italic;">Contoh: 2 Tahun</span>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="berlaku_dari"  class="col-sm-3 control-label">Berlaku Dari - Sampai</label>
-								<div class="col-sm-3 col-lg-2">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input title="Pilih Tanggal" id="tgl_mulai" class="form-control input-sm required" name="berlaku_dari" type="text"/>
-									</div>
-								</div>
-								<div class="col-sm-3 col-lg-2">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input title="Pilih Tanggal" id="tgl_akhir" class="form-control input-sm required" name="berlaku_sampai" type="text"/>
-									</div>
+								<label for="akta_nomor_nikah" class="col-sm-3 control-label">Nomor Akta Nikah</label>
+								<div class="col-sm-3">
+									<input id="akta_nomor_nikah" class="form-control input-sm" type="number" placeholder="Nomor Akta Nikah" name="akta_nomor_nikah">
 								</div>
 							</div>
+
 							<?php include("donjo-app/views/surat/form/_pamong.php"); ?>
 						</form>
 					</div>

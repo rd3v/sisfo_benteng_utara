@@ -54,37 +54,6 @@
 									<p class="help-block text-red small"><?= $surat_terakhir['ket_nomor']?><strong><?= $surat_terakhir['no_surat'];?></strong> (tgl: <?= $surat_terakhir['tanggal']?>)</p>
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="keperluan"  class="col-sm-3 control-label">Keperluan</label>
-								<div class="col-sm-8">
-									<textarea name="keperluan" class="form-control input-sm required" placeholder="Keperluan"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="keterangan"  class="col-sm-3 control-label">Keterangan</label>
-								<div class="col-sm-8">
-									<textarea  id="keterangan" class="form-control input-sm required" placeholder="Keterangan" name="keterangan"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="berlaku_dari"  class="col-sm-3 control-label">Berlaku Dari - Sampai</label>
-								<div class="col-sm-3 col-lg-2">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input title="Pilih Tanggal" id="tgl_mulai" class="form-control input-sm required" name="berlaku_dari" type="text"/>
-									</div>
-								</div>
-								<div class="col-sm-3 col-lg-2">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input title="Pilih Tanggal" id="tgl_akhir" class="form-control input-sm required" name="berlaku_sampai" type="text"/>
-									</div>
-								</div>
-							</div>
 							<?php include("donjo-app/views/surat/form/_pamong.php"); ?>
 						</form>
 					</div>

@@ -10,7 +10,7 @@
 // Data Konfigurasi MySQL yang disesuaikan
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'u6194779_bentengutara';
-$db['default']['password'] = 'ch183*$#y74';
-$db['default']['database'] = 'u6194779_bentengutara';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '12345';
+$db['default']['database'] = 'opensid_bontokanang';
 ?>

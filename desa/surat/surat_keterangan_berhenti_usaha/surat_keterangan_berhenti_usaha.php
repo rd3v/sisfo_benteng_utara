@@ -55,36 +55,17 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="keperluan"  class="col-sm-3 control-label">Keperluan</label>
+								<label for="keperluan"  class="col-sm-3 control-label">Lingkungan</label>
 								<div class="col-sm-8">
-									<textarea name="keperluan" class="form-control input-sm required" placeholder="Keperluan"></textarea>
+									<textarea name="lingkungan" class="form-control input-sm required" placeholder="Lingkungan"></textarea>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="keterangan"  class="col-sm-3 control-label">Keterangan</label>
+								<label for="keperluan"  class="col-sm-3 control-label">Nama Usaha</label>
 								<div class="col-sm-8">
-									<textarea  id="keterangan" class="form-control input-sm required" placeholder="Keterangan" name="keterangan"></textarea>
+									<textarea name="nama_usaha" class="form-control input-sm required" placeholder="Nama Usaha"></textarea>
 								</div>
-							</div>
-							<div class="form-group">
-								<label for="berlaku_dari"  class="col-sm-3 control-label">Berlaku Dari - Sampai</label>
-								<div class="col-sm-3 col-lg-2">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input title="Pilih Tanggal" id="tgl_mulai" class="form-control input-sm required" name="berlaku_dari" type="text"/>
-									</div>
-								</div>
-								<div class="col-sm-3 col-lg-2">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input title="Pilih Tanggal" id="tgl_akhir" class="form-control input-sm required" name="berlaku_sampai" type="text"/>
-									</div>
-								</div>
-							</div>
+							</div>							
 							<?php include("donjo-app/views/surat/form/_pamong.php"); ?>
 						</form>
 					</div>
