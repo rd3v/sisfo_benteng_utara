@@ -9,6 +9,9 @@ RewriteBase /
 # Apabila menggunakan sub-domain atau sub-folder gunakan bentuk berikut
 # RewriteBase /nama-sub-folder/
 
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Prevent index dirs
 RewriteCond $1 ^(surat)
 RewriteRule ^(.*)$ index.php/$1 [L,QSA]
