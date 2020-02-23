@@ -73,7 +73,7 @@
 										<div class="input-group-addon">
 											<i class="fa fa-calendar"></i>
 										</div>
-										<input title="Pilih Tanggal" id="tgl_mulai" class="form-control input-sm required" name="tanggal_lahir_suami" type="text"/>
+										<input title="Pilih Tanggal" class="form-control input-sm required" name="tanggal_lahir_suami" type="date"/>
 									</div>
 								</div>
 							</div>
