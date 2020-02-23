@@ -55,6 +55,24 @@
 								</div>
 							</div>
 							<div class="form-group">
+								<label for="nama_anak" class="col-sm-3 control-label">Nama Anak</label>
+								<div class="col-sm-4">
+									<input type="text" name="nama_anak" class="form-control input-sm required" placeholder="Nama Anak" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="tempat_lahir" class="col-sm-3 control-label">Tempat Lahir Anak</label>
+								<div class="col-sm-4">
+									<input type="text" name="tempat_lahir" class="form-control input-sm required" placeholder="Tempat Lahir Anak" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="tanggal_lahir" class="col-sm-3 control-label">Tanggal Lahir Anak</label>
+								<div class="col-sm-4">
+									<input type="date" name="tanggal_lahir" class="form-control input-sm required" placeholder="Tanggal Lahir Anak" />
+								</div>
+							</div>
+							<div class="form-group">
 								<label for="biaya_awal" class="col-sm-3 control-label">Biaya </label>
 								<div class="col-sm-2">
 									<input type="number" name="biaya_awal" class="form-control input-sm required" placeholder="Biaya Awal" />
