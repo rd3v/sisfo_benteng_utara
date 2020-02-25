@@ -1,8 +1,8 @@
 <?php 
 $host = "localhost";
 $user = "u6194779_bentengutara";
-$pass = "ch183*$#y74";
-$db = "u6194779_bentengutara";
+$pass = "u6194779_bentengutara";
+$db = "ch183*$#y74";
 
 $connect = mysqli_connect($host,$user,$pass,$db);
 if(!$connect) {
@@ -13,7 +13,6 @@ if (isset($_POST['submit'])) {
     
     $name = $_POST['name'];
     $nik = $_POST['nik'];
-    $email = $_POST['email'];
     $id_format_surat = $_POST['id_format_surat'];
     $message = $_POST['message'];
     
@@ -31,7 +30,7 @@ if (isset($_POST['submit'])) {
 
     }
 
-    $str = "INSERT INTO tweb_surat_online(nama,nik,email,jenis_surat_id,keterangan) VALUES('$name','$nik','$email','$id_format_surat','$message')";
+    $str = "INSERT INTO tweb_surat_online(nama,nik,jenis_surat_id,keterangan) VALUES('$name','$nik','$id_format_surat','$message')";
     
     $exec = mysqli_query($connect,$str);
     
@@ -104,14 +103,7 @@ if (!$querySelectSurat) {
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_email">Email *</label>
-                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Silahkan masukkan email anda *" required="required" data-error="Format email salah.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <label for="form_need">Pilih Jenis Surat *</label>
                                     <select id="form_need" name="id_format_surat" class="form-control" required="required" data-error="Pilih jenis surat yang anda perlukan">
