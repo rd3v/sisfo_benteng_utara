@@ -157,9 +157,8 @@ class Program_bantuan extends Admin_Controller {
 
 		$this->form_validation->set_rules('cid', 'Sasaran', 'required');
 		$this->form_validation->set_rules('nama', 'Nama Program', 'required');
-		$this->form_validation->set_rules('sdate', 'Tanggal awal', 'required');
-		$this->form_validation->set_rules('edate', 'Tanggal akhir', 'required');
-
+		$this->form_validation->set_rules('alamat', 'Alamat', 'required');
+	
 		$header = $this->header_model->get_data();
 
 		$nav['act'] = 6;
@@ -183,8 +182,7 @@ class Program_bantuan extends Admin_Controller {
 
 		$this->form_validation->set_rules('cid', 'Sasaran', 'required');
 		$this->form_validation->set_rules('nama', 'Nama Program', 'required');
-		$this->form_validation->set_rules('sdate', 'Tanggal awal', 'required');
-		$this->form_validation->set_rules('edate', 'Tanggal akhir', 'required');
+		$this->form_validation->set_rules('alamat', 'Alamat', 'required');
 
 		$header = $this->header_model->get_data();
 

@@ -13,7 +13,7 @@
 						<td width="20%"><b>Nama</b></td>
 						<td><b>NIK</b></td>
 						<td><b>Program</b></td>
-						<td width="20%"><b>Masa Berlaku</b></td>
+						<td width="20%"><b>Alamat</b></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -32,7 +32,7 @@
 							<?= $data['program'] ?>
 						</td>
 						<td style="text-align:center;">
-							<?= tgl_indo($data["mulai"])." - ".tgl_indo($data["akhir"]) ?>
+							<?= $data["alamat"] ?>
 						</td>
 					</tr>
 				<?php endforeach; ?>

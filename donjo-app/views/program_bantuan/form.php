@@ -41,8 +41,8 @@
 														<td> :  <?= $sasaran[$detail["sasaran"]]?></td>
 													</tr>
 													<tr>
-														<td style="padding-top : 10px;padding-bottom : 10px;" nowrap>Masa Berlaku</td>
-														<td> : <?= fTampilTgl($detail["sdate"],$detail["edate"])?></td>
+														<td style="padding-top : 10px;padding-bottom : 10px;" nowrap>Alamat</td>
+														<td> : <?= $detail["alamat"]?></td>
 													</tr>
 													<tr>
 														<td style="padding-top : 10px;padding-bottom : 10px;" >Keterangan</td>

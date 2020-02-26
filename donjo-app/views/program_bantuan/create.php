@@ -47,24 +47,13 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-sm-3 control-label" for="tgl_post">Rentang Waktu Program</label>
-								<div class="col-sm-4">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input class="form-control input-sm pull-right required" id="tgl_1" name="sdate" placeholder="Tgl. Mulai" type="text">
-									</div>
+								<label class="col-sm-3 control-label" for="alamat">Alamat</label>
+								<div class="col-sm-8">
+
+									<input class="form-control input-sm required" id="alamat" name="alamat" placeholder="Alamat" type="text">
+
 								</div>
-								<div class="col-sm-4">
-									<div class="input-group input-group-sm date">
-										<div class="input-group-addon">
-											<i class="fa fa-calendar"></i>
-										</div>
-										<input class="form-control input-sm pull-right required" id="tgl_2" name="edate" placeholder="Tgl. Akhir" type="text">
-									</div>
-								</div>
-             	</div>
+			             	</div>
 						</div>
 						<div class='box-footer'>
 							<div class='col-xs-12'>

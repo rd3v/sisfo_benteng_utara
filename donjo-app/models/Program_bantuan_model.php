@@ -12,12 +12,12 @@ class Program_bantuan_model extends CI_Model {
 	{
 		if ($sasaran > 0)
 		{
-			$strSQL = "SELECT p.id, p.nama, p.sasaran, p.ndesc, p.sdate, p.edate, p.userid, p.status
+			$strSQL = "SELECT p.id, p.nama, p.sasaran, p.ndesc, p.alamat, p.userid, p.status
 				FROM program p WHERE p.sasaran=".$sasaran;
 		}
 		else
 		{
-			$strSQL = "SELECT p.id, p.nama, p.sasaran, p.ndesc, p.sdate, p.edate, p.userid, p.status, CONCAT('50',p.id) as lap
+			$strSQL = "SELECT p.id, p.nama, p.sasaran, p.alamat, p.userid, p.status, CONCAT('50',p.id) as lap
 				FROM program p WHERE 1";
 		}
 		$query = $this->db->query($strSQL);
@@ -48,7 +48,7 @@ class Program_bantuan_model extends CI_Model {
 		$no_kk = $this->keluarga_model->get_nokk($kk_id);
 		$sasaran = 2;
 		$strSQL = "
-			SELECT p.id, p.nama, p.sasaran, p.ndesc, p.sdate, p.edate, p.userid, p.status, CONCAT('50',p.id) as lap, pp.peserta
+			SELECT p.id, p.nama, p.sasaran, p.ndesc, p.alamat, p.userid, p.status, CONCAT('50',p.id) as lap, pp.peserta
 			FROM program p
 			LEFT OUTER JOIN program_peserta pp ON p.id = pp.program_id AND pp.peserta = '$no_kk'
 			WHERE p.sasaran = $sasaran";
@@ -240,7 +240,7 @@ class Program_bantuan_model extends CI_Model {
 		if ($slug === false)
 		{
 			$response['paging'] = $this->paging_bantuan($p);
-			$strSQL = "SELECT p.id, p.nama, p.sasaran, p.ndesc, p.sdate, p.edate, p.userid, p.status";
+			$strSQL = "SELECT p.id, p.nama, p.sasaran, p.ndesc, p.alamat, p.userid, p.status";
 			$strSQL .= $this->get_program_sql();
 			$strSQL .= ' LIMIT ' .$response["paging"]->offset. ',' .$response["paging"]->per_page;
 			$query = $this->db->query($strSQL);
@@ -252,7 +252,7 @@ class Program_bantuan_model extends CI_Model {
 		{
 			// Untuk program bantuan, $slug berbentuk '50<program_id>'
 			$slug = preg_replace("/^50/", "", $slug);
-			$strSQL = "SELECT p.id, p.nama, p.sasaran, p.ndesc, p.sdate, p.edate, p.userid, p.status FROM program p WHERE p.id = ".$slug;
+			$strSQL = "SELECT p.id, p.nama, p.sasaran, p.ndesc, p.alamat, p.userid, p.status FROM program p WHERE p.id = ".$slug;
 			$query = $this->db->query($strSQL);
 			$hasil0 = $query->row_array();
 
@@ -524,7 +524,7 @@ class Program_bantuan_model extends CI_Model {
 		 * $cat => $sasaran adalah tipe/kategori si $id.
 		 *
 		 * */
-		$strSQL = "SELECT p.id as id, o.peserta as nik, p.nama as nama, p.sdate, p.edate, p.ndesc
+		$strSQL = "SELECT p.id as id, o.peserta as nik, p.nama as nama, p.alamat, p.ndesc
 			FROM program_peserta o
 			LEFT JOIN program p ON p.id = o.program_id
 			WHERE ((o.peserta='".fixSQL($id)."') AND (o.sasaran='".fixSQL($cat)."'))";
@@ -638,8 +638,7 @@ class Program_bantuan_model extends CI_Model {
 			'nama' => fixSQL($this->input->post('nama')),
 			'ndesc' => fixSQL($this->input->post('ndesc')),
 			'userid' =>  $_SESSION['user'],
-			'sdate' => date("Y-m-d",strtotime($this->input->post('sdate'))),
-			'edate' => date("Y-m-d",strtotime($this->input->post('edate')))
+			'alamat' => fixSQL($this->input->post('alamat')),
 		);
 		return $this->db->insert('program', $data);
 	}
@@ -777,8 +776,7 @@ class Program_bantuan_model extends CI_Model {
 		$strSQL = "UPDATE `program` SET `sasaran`='".$this->input->post('cid')."',
 		`nama`='".fixSQL($this->input->post('nama'))."',
 		`ndesc`='".fixSQL($this->input->post('ndesc'))."',
-		`sdate`='".date("Y-m-d",strtotime($this->input->post('sdate')))."',
-		`edate`='".date("Y-m-d",strtotime($this->input->post('edate')))."'
+		`alamat`='".fixSQL($this->input->post('alamat'))."'
 		-- `status`='".$this->input->post('status')."'
 		 WHERE id=".$id;
 
