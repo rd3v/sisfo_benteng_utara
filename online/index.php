@@ -1,8 +1,8 @@
 <?php 
 $host = "localhost";
 $user = "u6194779_bentengutara";
-$pass = "u6194779_bentengutara";
-$db = "ch183*$#y74";
+$pass = "ch183*$#y74";
+$db = "u6194779_bentengutara";
 
 $connect = mysqli_connect($host,$user,$pass,$db);
 if(!$connect) {
