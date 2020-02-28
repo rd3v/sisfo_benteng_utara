@@ -69,7 +69,7 @@
 							<?php include("donjo-app/views/surat/form/_pamong.php"); ?>
 						</form>
 					</div>
-					<?php include("donjo-app/views/surat/form/tombol_cetak.php"); ?>
+					<?php include("donjo-app/views/surat/form/tombol_cetak.php");  ?>
 				</div>
 			</div>
 		</div>
