@@ -18,7 +18,7 @@
 	<label for="jabatan"  class="col-sm-3 control-label">Menjabat Sebagai</label>
 	<div class="col-sm-6 col-lg-4">
 		<select class="form-control input-sm required" id="jabatan" name="jabatan">
-			<option selected="selected">-- Pilih Jabatan--</option>
+			<option selected="selected">-- Pilih Jabatan --</option>
 			<?php foreach ($pamong AS $data): ?>
 				<option <?php if ($data['pamong_ttd']==1): ?>selected<?php endif; ?>><?= $data['jabatan']?></option>
 			<?php endforeach; ?>

@@ -63,13 +63,13 @@
 							<div class="form-group">
 								<label for="keterangan"  class="col-sm-3 control-label">Keterangan</label>
 								<div class="col-sm-8">
-									<textarea  id="keterangan" class="form-control input-sm required" placeholder="Keterangan" name="keterangan"></textarea>
+									<textarea  id="keterangan" class="form-control input-sm required" placeholder="Keterangan" name="keterangan">asdf</textarea>
 								</div>
 							</div>
 							<?php include("donjo-app/views/surat/form/_pamong.php"); ?>
 						</form>
 					</div>
-					<?php include("donjo-app/views/surat/form/tombol_cetak.php");  ?>
+					<?php include("donjo-app/views/surat/form/tombol_cetak.php"); ?>
 				</div>
 			</div>
 		</div>
