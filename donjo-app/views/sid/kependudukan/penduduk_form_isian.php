@@ -213,30 +213,19 @@
 						<label class="text-right"><strong>DATA KELAHIRAN :</strong></label>
 					</div>
 				</div>
-				<div class='col-sm-4'>
+				<!-- <div class='col-sm-4'>
 					<div class='form-group'>
 						<label for="akta_lahir">Nomor Akta Kelahiran </label>
 						<input id="akta_lahir" name="akta_lahir" class="form-control input-sm" type="text" placeholder="Nomor Akta Kelahiran" value="<?= $penduduk['akta_lahir']?>"></input>
 					</div>
-				</div>
-				<div class='col-sm-8'>
+				</div> -->
+				<div class='col-sm-6'>
 					<div class='form-group'>
 						<label for="tempatlahir">Tempat Lahir</label>
 						<input id="tempatlahir" name="tempatlahir" class="form-control input-sm" type="text" placeholder="Tempat Lahir" value="<?= strtoupper($penduduk['tempatlahir'])?>"></input>
 					</div>
 				</div>
-				<div class='col-sm-4'>
-					<div class='form-group'>
-						<label for="tanggallahir">Tanggal Lahir</label>
-						<div class="input-group input-group-sm date">
-							<div class="input-group-addon">
-								<i class="fa fa-calendar"></i>
-							</div>
-							<input class="form-control input-sm pull-right" id="tgl_1" name="tanggallahir" type="text" value="<?= $penduduk['tanggallahir']?>">
-						</div>
-					</div>
-				</div>
-				<div class='col-sm-4'>
+<!-- 				<div class='col-sm-4'>
 					<div class='form-group'>
 						<label for="waktulahir">Waktu Kelahiran </label>
 						<div class="input-group input-group-sm date">
@@ -246,8 +235,8 @@
 							<input class="form-control input-sm pull-right" id="jammenit_1" name="waktu_lahir" type="text" value="<?= $penduduk['waktu_lahir']?>">
 						</div>
 					</div>
-				</div>
-				<div class='col-sm-4'>
+				</div> -->
+<!-- 				<div class='col-sm-6'>
 					<div class='form-group'>
 						<label for="tempat_dilahirkan">Tempat Dilahirkan</label>
 						<select class="form-control input-sm" name="tempat_dilahirkan">
@@ -257,8 +246,19 @@
 							 <?php endforeach; ?>
 						</select>
 					</div>
-				</div>
-				<div class='col-sm-12'>
+				</div> -->
+				<div class='col-sm-6'>
+					<div class='form-group'>
+						<label for="tanggallahir">Tanggal Lahir</label>
+						<div class="input-group input-group-sm date">
+							<div class="input-group-addon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<input class="form-control input-sm pull-right" id="tgl_1" name="tanggallahir" type="text" value="<?= $penduduk['tanggallahir']?>">
+						</div>
+					</div>
+				</div>				
+				<!-- <div class='col-sm-12'>
 					<div class='row'>
 						<div class='col-sm-4'>
 							<div class='form-group'>
@@ -289,8 +289,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class='col-sm-12'>
+				</div> -->
+				<!-- <div class='col-sm-12'>
 					<div class='row'>
 						<div class='col-sm-4'>
 							<div class='form-group'>
@@ -305,7 +305,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class='col-sm-12'>
 					<div class="form-group subtitle_head">
 						<label class="text-right"><strong>PENDIDIKAN DAN PEKERJAAN :</strong></label>
@@ -499,7 +499,7 @@
 						<label class="text-right"><strong>STATUS PERKAWINAN :</strong></label>
 					</div>
 				</div>
-				<div class='col-sm-4'>
+				<div class='col-sm-12'>
 					<div class='form-group'>
 						<label for="status_kawin">Status Perkawinan</label>
 						<select class="form-control input-sm" name="status_kawin" onchange="disable_kawin_cerai($(this).find(':selected').val())">
@@ -510,7 +510,7 @@
 						</select>
 					</div>
 				</div>
-				<div class='col-sm-4'>
+<!-- 				<div class='col-sm-4'>
 					<div class='form-group'>
 						<?php if ($penduduk['agama_id']==0 OR is_null($penduduk['agama_id'])): ?>
 							<label for="akta_perkawinan">No. Akta Nikah (Buku Nikah)/Perkawinan </label>
@@ -521,8 +521,8 @@
 						<?php endif; ?>
 							<input id="akta_perkawinan" name="akta_perkawinan" class="form-control input-sm" type="text" placeholder="Nomor Akta Perkawinan" value="<?= $penduduk['akta_perkawinan']?>"></input>
 					</div>
-				</div>
-				<div class='col-sm-4'>
+				</div> -->
+<!-- 				<div class='col-sm-4'>
 					<div class='form-group'>
 						<label for="tanggalperkawinan">Tanggal Perkawinan <code>(Wajib diisi apabila status KAWIN)</code></label>
 						<div class="input-group input-group-sm date">
@@ -532,8 +532,8 @@
 							<input class="form-control input-sm pull-right" id="tgl_3" name="tanggalperkawinan" type="text" value="<?= $penduduk['tanggalperkawinan']?>">
 						</div>
 					</div>
-				</div>
-				<div class='col-sm-8'>
+				</div> -->
+<!-- 				<div class='col-sm-8'>
 					<div class='form-group'>
 						<label for="akta_perceraian">Akta Perceraian </label>
 						<input id="akta_perceraian" name="akta_perceraian" class="form-control input-sm" type="text" placeholder="Akta Perceraian" value="<?= strtoupper($penduduk['akta_perceraian'])?>"></input>
@@ -549,7 +549,7 @@
 							<input class="form-control input-sm pull-right" id="tgl_4" name="tanggalperceraian" type="text" value="<?= $penduduk['tanggalperceraian']?>">
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class='col-sm-12'>
 					<div class="form-group subtitle_head">
 						<label class="text-right"><strong>DATA KESEHATAN :</strong></label>
@@ -557,7 +557,7 @@
 				</div>
 				<div class='col-sm-12'>
 					<div class="row">
-						<div class='col-sm-4'>
+						<!-- <div class='col-sm-4'>
 							<div class='form-group'>
 								<label for="golongan_darah_id">Golongan Darah</label>
 								<select class="form-control input-sm required" name="golongan_darah_id">
@@ -567,8 +567,8 @@
 									<?php endforeach;?>
 								</select>
 							</div>
-						</div>
-						<div class='col-sm-4'>
+						</div> -->
+						<div class='col-sm-6'>
 							<div class='form-group'>
 								<label for="cacat_id">Cacat</label>
 								<select class="form-control input-sm" name="cacat_id" >
@@ -579,7 +579,7 @@
 								</select>
 							</div>
 						</div>
-						<div class='col-sm-4'>
+						<div class='col-sm-6'>
 							<div class='form-group'>
 								<label for="sakit_menahun_id">Sakit Menahun</label>
 								<select class="form-control input-sm" name="sakit_menahun_id">
@@ -592,7 +592,7 @@
 						</div>
 					</div>
 				</div>
-				<div class='col-sm-4' id="akseptor_kb">
+				<div class='col-sm-6' id="akseptor_kb">
 					<div class='form-group'>
 						<label for="cara_kb_id">Akseptor KB</label>
 						<select class="form-control input-sm" name="cara_kb_id" >
